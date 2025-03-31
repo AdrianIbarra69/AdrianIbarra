@@ -3,12 +3,30 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: pink;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.example.shatpaket.HelloController">
+<VBox alignment="CENTER" prefHeight="392.0" prefWidth="289.0" spacing="20.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shatpaket.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
+   <Label prefHeight="28.0" prefWidth="190.0" text="Adrian Ibarra" textAlignment="CENTER">
+      <font>
+         <Font size="32.0" />
+      </font>
+   </Label>
+   <HBox prefHeight="23.0" prefWidth="250.0">
+      <children>
+         <Label text="Username" />
+      </children>
+   </HBox>
+   <TextField />
+   <HBox prefHeight="14.0" prefWidth="250.0">
+      <children>
+         <Label text="Password" />
+      </children>
+   </HBox>
+   <PasswordField />
 
     <Label fx:id="welcomeText" />
-    <Button onAction="#onHelloButtonClick" text="Hello!" />
+    <Button onAction="#onHelloButtonClick" text="Log In" />
 </VBox>
